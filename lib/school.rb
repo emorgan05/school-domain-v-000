@@ -15,3 +15,4 @@ class School
 end
 
 add_student("Zach", 9)
+puts roster
