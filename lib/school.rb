@@ -26,6 +26,7 @@ class School
       @alpha_roster[grade] = []
       @alpha_roster[grade] << array.sort
     end
+    @alpha_roster
   end
 end
 
