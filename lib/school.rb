@@ -7,8 +7,8 @@ class School
   end
 
   def add_student(name, grade)
-    puts grade_keys = @roster.keys
-    if @roster[grade] == grade
+    grade_keys = @roster.keys
+    if grade_keys.include?(grade)
       @roster[grade] << name
     else
       @roster[grade] = []
