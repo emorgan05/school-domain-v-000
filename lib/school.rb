@@ -13,3 +13,5 @@ class School
   end
 
 end
+
+add_student("Zach", 9)
