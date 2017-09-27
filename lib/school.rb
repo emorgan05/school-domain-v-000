@@ -21,8 +21,10 @@ class School
   end
 
   def sort
+    @alpha_roster = {}
     @roster.each do |grade, array|
-      array.sort
+      @alpha_roster[grade] = []
+      @alpha_roster[grade] << array.sort
     end
   end
 end
