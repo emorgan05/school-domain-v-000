@@ -9,9 +9,6 @@ class School
   end
 
   def add_student(name, grade)
-    @roster[grade] = name
+    @roster[grade] = []
   end
 end
-
-school = School.new("Bayside")
-puts school.add_student("Zach", 9)
