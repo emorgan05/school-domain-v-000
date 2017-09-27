@@ -7,6 +7,7 @@ class School
   end
 
   def add_student(name, grade)
+    puts grade_keys = @roster.keys
     if @roster[grade] == grade
       @roster[grade] << name
     else
