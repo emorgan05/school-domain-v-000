@@ -14,4 +14,4 @@ class School
 end
 
 school = School.new("Bayside")
-school.add_student("Zach", 9)
+puts school.add_student("Zach", 9)
