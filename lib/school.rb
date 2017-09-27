@@ -11,8 +11,8 @@ class School
   def add_student(name, grade)
     roster[grade] = []
   end
-
 end
 
-add_student("Zach", 9)
-puts roster
+school = School.new("Bayside")
+school.add_student("Zach", 9)
+puts school.roster
