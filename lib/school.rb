@@ -9,10 +9,11 @@ class School
     @roster
   end
   
-  #def add_student(name, grade)
-  #  @roster[grade] = []
-  #end
+  def add_student(name, grade)
+    @roster[grade] = []
+  end
 end
 
 school = School.new("Bayside")
+school.add_student("Zach", 9)
 puts school.roster.length
