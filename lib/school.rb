@@ -15,4 +15,3 @@ end
 
 school = School.new("Bayside")
 puts school.add_student("Zach", 9)
-puts school.roster
