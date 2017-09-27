@@ -16,7 +16,9 @@ class School
     end
   end
 
-  
+  def grade(num)
+    @roster[num]
+  end
 end
 
 school = School.new("Bayside")
@@ -25,3 +27,4 @@ school.add_student("AC", 10)
 school.add_student("Kelly", 9)
 puts school.name
 puts school.roster
+puts school.grade(9)
