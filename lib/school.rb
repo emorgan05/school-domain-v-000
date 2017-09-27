@@ -7,11 +7,13 @@ class School
   end
 
   def add_student(name, grade)
-    if @roster[grade] == grade
-      @roster[grade] << name
-    else
-      @roster[grade] = []
-      @roster[grade] << name
+    @roster.each do |grade_level, array|
+      if grade_level == grade
+        array << name
+      else
+        @roster[grade] = []
+        @roster[grade] << name
+      end
     end
   end
 end
